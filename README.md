@@ -20,20 +20,14 @@ The galaxies have different radial coverage and sampling, so their outermost poi
 
 The notebook loads SPARC-format rotation-curve data and calculates the baryonic rotation velocity:
 
-\[
-V_{\mathrm{bar}}(R)=\sqrt{
-V_{\mathrm{gas}}(R)\left|V_{\mathrm{gas}}(R)\right|
-+\Upsilon_{\mathrm{disk}}V_{\mathrm{disk}}^2(R)
-+\Upsilon_{\mathrm{bul}}V_{\mathrm{bul}}^2(R)
-}.
-\]
+V_bar(R) = sqrt(V_gas(R) * |V_gas(R)| + Υ_disk * V_disk(R)^2 + Υ_bul * V_bul(R)^2)
 
-The adopted mass-to-light ratios are \(\Upsilon_{\mathrm{disk}}=0.5\) and \(\Upsilon_{\mathrm{bul}}=0.7\). These are assumptions used in the model, not universal values.
+The adopted mass-to-light ratios are Υ_disk = 0.5 and Υ_bul = 0.7. These are assumptions used in the model, not universal values.
 
 The notebook calculates:
 
-- **Velocity discrepancy:** \(\Delta V=V_{\mathrm{obs}}-V_{\mathrm{bar}}\)
-- **Velocity ratio:** \(R_V=V_{\mathrm{obs}}/V_{\mathrm{bar}}\)
+- Velocity discrepancy: ΔV = V_obs - V_bar
+- Velocity ratio: R_V = V_obs / V_bar
 
 It plots observed and baryonic-predicted rotation curves, examines the discrepancy, and compares the three galaxies.
 
